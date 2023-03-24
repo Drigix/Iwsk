@@ -51,7 +51,9 @@ export class AppComponent implements OnInit {
     this.ifCheck = true;
     this.actualQuestion?.answers.forEach((item, index) => {
       if(item === this.chooseAnswer) {
-        this.counter++;
+        if(this.actualQuestion?.values[index]) {
+          this.counter++;
+        }
       }
     })
   }
