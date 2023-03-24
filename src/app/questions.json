@@ -1,0 +1,1064 @@
+{
+  "name":"IWSK - USB",
+  "questions":[
+   {
+      "question":"Meta-protokół interfejsu Thunderbolt:",
+      "answers":[
+       "pozwala na podłączenie do 20 urządzeń w topologii łańcucha",
+       "pozwala na `gorące podłączanie` urządzeń w systemie macOS",
+       "pozwala wykrywać błędy na magistrali podczas transmisji",
+       "sprawia, że interfejs ten jest transparentny dla sytemów operacyjnych"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Czy programista aplikacji Androida jest w stanie. (brak 100% poprawnej odpowiedzi)",
+      "answers":[
+       "tak, ale po procedurze enumeracyjnej",
+       "nie, ponieważ potrafi odczytać jedynie maksymalne natężenie prądu pobieranego przez urządzenie (wyrażane w jednostkach 2 mA)",
+       "tak, zaraz po podłączeniu urządzenia",
+       "tak, odczytując zawartość deskryptowa interfejsu"
+      ],
+      "values":[
+       true,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Wylistowanie podłączonych urządzeń USB w Androidzie z poziomu aplikacji:",
+      "answers":[
+       "wymaga uprawnień niebezpiecznych",
+       "wymaga instalacji serwisu USBManager",
+       "nie jest możliwe w Androidzie 7",
+       "wymaga uprawnień bezpiecznych"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Przypadkowo przecięto linie SSTX+/- oraz D+/- w kablu USB 3.x OTG. Podłączenie za pomogą takiego kabla pendriva USB 3.x do telefonu z Androidem 8.0",
+      "answers":[
+       "sprawi, że pendrive będzie widoczny w systemie ale będzie pracował jedynie z szybkościami do 480 Mb/s",
+       "nie będzie możliwe ponieważ nie ma kabla USB 3.x OTG",
+       "sprawi, że pendrive będzie działał z szybkością jedynie SuperSpeed, a nie SuperSpeed+",
+       "sprawi, że system nie wykryje pendriva ponieważ uszkodzony kabel uniemożliwia przeprowadzenie procedury enumeracji"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Protokól Role Swap Protocol (RSP)",
+      "answers":[
+       "został wprowadzony w USB 2.0 jako suplement do specyfikacji",
+       "został wprowadzony w specyfikacji USB 3.0",
+       "nie ma takiego protokołu USB",
+       "został zastąpiony przez Host Negotiation Protocol (HNP)"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Filtr intentów Androida pozwala na wychwycenie zdarzenia podłączenia urządzenia USB:",
+      "answers":[
+       "o dokładnie okreslonej liczbie interfejsów",
+       "o dokładnie określonym ID dostawcy i produktu",
+       "tylko użytkownikowi o uprawnieniach root'a",
+       "o dokładnie określonej liczbie punktów końcowych"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Maszyna stanów LTSSM w USB 3.1 składa się z:",
+      "answers":[
+       "nie ma takiej maszyny stanów",
+       "stanów od U0 do U3",
+       "3 stanów",
+       "2 stanów"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Tryb transmisji HighSpeed+ pozwala na transmisję danych z szybkością:",
+      "answers":[
+       "10 GB/s",
+       "10 Gb/s",
+       "żadna z wymienionych odpowiedzi",
+       "taką samą jaka oferowana jest przez interfejs Thunderbolt w wersji 2"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Ilustracja pinoutu wtyku USB typu C (BRAK ILUSTRACJI!) Który pin wykorzystywany jest do elektrycznego wskazania roli host kontrolera w technologi USB OTG?",
+      "answers":[
+       "tylko we wtyku typu USB B jest taki pin i nazywa się on tam ID",
+       "CCx",
+       "SBUx",
+       "Dx"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Wskaż fałszywe zdania:",
+      "answers":[
+       "maszyna LTSSM zawiera stany U0, U1-U3",
+       "interwał magistralowy jest wielokrotnością interwału serwisowego",
+       "z jednym deskryptorem interfejsu związany jest tylko jeden deskryptor konfiguracji",
+       "parametr MaxBurst musi być podzielny przez 4"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Kanał DMA pomiędzy PaO a punktem końcowym USB w urządzeniu Cypress FX3",
+      "answers":[
+       "pracuje w trybie Producent-Konsument",
+       "wymaga inicjalizacji zawartości buforów kanału DMA",
+       "rozmiar bufora kanału DMA musi być wielokrotnością liczby 16",
+       "przed powrotem bufora na koniec kolejki wywoływana jest funkcja zwrotna (callback)"
+      ],
+      "values":[
+       true,
+       true,
+       true,
+       true
+      ]
+   },
+   {
+      "question":"Przewód USB 3.1 Gen 1:",
+      "answers":[
+       "zawiera dwie nowe pary SSTX+/- oraz SSRX+/- odpowiednio do odbierania i nadawania danych z szybkością SuperSpeed",
+       "zawiera parę D+/- znaną z USB 2.0, która wykorzystywana jest przez urządzenia USB 3.1 wyłacznie podczas procedury enumeracji",
+       "zawiera pary SSTX i SSRX, które są ze sobą `skrosowane` w przewodzie",
+       "umożliwia transmisję SuperSpeed w trybie pół-dupleksowym"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       true
+      ]
+   },
+   {
+      "question":"Transfery danych USB 3.1 Gen 1:",
+      "answers":[
+       "przerwaniowe i izochroniczne są przykładami transferów periodycznych",
+       "składają się z co najżywej 16 transkacji (tzw. burst)",
+       "mają trzy rodzaje: kontrolny, masowy, izochroniczny",
+       "ich rodzaje zorientowane są na charakter danych"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Model komunikacyjny USB 3.1 Gen 1:",
+      "answers":[
+       "odpowiada modelowi ISO/OSI",
+       "składa się tylko z pięciu warstw",
+       "zawiera warstwę transakcji",
+       "jest warstwowy"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Transfer izochroniczny USB 3.1 Gen 1:",
+      "answers":[
+       "jest przypadkiem szczególnym transferu przerwaniowego",
+       "pozwala na realizację trzech transakcji w ramach kazdego interwału magistralowego (tzw. transmisja szerokopasmowa)",
+       "nie może być dzielony na transakcje seryjne",
+       "wymaga potwierdzenia poprawności wykonania transakcji"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Specyfikacja USB 3.1",
+      "answers":[
+       "wprowadza dwie generacje urządzeń USB: Gen 1 i Gen 2",
+       "gen 2 wprowadza szósty tryb szybkości SuperSpeed+ (10 Gb/s)",
+       "zastępuje specyfikację USB 3.0",
+       "Gen 1 i Gen 2 różnią się tylko szybkością transmiji, odpowiednio 5 Gb/s i 10 Gb/s"
+      ],
+      "values":[
+       true,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Ostatnie pole deskryptora współtowarzyszącego punktu końcowego:",
+      "answers":[
+       "jest 32 bitowe, a najbardziej znaczący bajt jest podawany jako pierwszy",
+       "jest 16 bitowe, a najbardziej znaczący bajt podawany jest jako pierwszy",
+       "jest 16 bitowe, a najmniej znaczący bajt jest podawany jako pierwszy",
+       "jest 32 bitowe, a najmniej znaczący bajt jest podawany jako pierwszy"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Mechanizm kredytowania USB 3.1 Gen 1:",
+      "answers":[
+       "wykorzystuje komendę Lock_Credit",
+       "wykonywany jest na poziomie warstwy protokołowej",
+       "został wprowadzony dopiero w specyfikacji USB 3.1",
+       "żadna z odpowiedzi"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Deskryptor punktu końcowego w wersji USB 3.1 Gen 1 zawiera parametry:",
+      "answers":[
+       "interwał serwisowy (wyrażony w postaci odpowiedniego wzoru)",
+       "MaxPacketSize",
+       "MaxBurst",
+       "Mult"
+      ],
+      "values":[
+       true,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Zgłoszenie transferu do wykonania (zgłoszenia USB) wymaga wywołania odpowiednio funkcji:",
+      "answers":[
+       "Libusb_alloc_transfer, libusb_register_transfer",
+       "Libusb_create_transferm libusb_submit_transfer",
+       "Libusb_alloc_transfer, libusb_submit_transfer",
+       "Libusb_create_transfer, libusb_perform_transfer"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Tryb transmisji SuperSpeed+ pozwala na transmizję danych z szybkością:",
+      "answers":[
+       "10 Gb/s",
+       "Taką samą jak oferowana jest przez interfejs Thunderbolt w wersji 2",
+       "10 GB/s",
+       "Taką samą jaka oferowana jest przez interfejs IEEE 1394n"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Hub USB 3.1 potrafi zakumulowac w buforze:",
+      "answers":[
+       "1024 pakiety TP",
+       "16 pakietów TP",
+       "4 pakiety TP",
+       "512 pakietów TP"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Transmija seryjna USB 3.1:",
+      "answers":[
+       "Nie może składać się z 16 pakietów transmisji",
+       "Nie może składać się z 16 subpakietów DPH",
+       "Może składać się z 16 subpakietów DPP",
+       "Może składać się co najwyżej z 15 par subpakietów DIPH+DPP"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Komenda Link_Good przesyłana jest w segmencie:",
+      "answers":[
+       "tylko po pakiecie DPH",
+       "po pakietach DPH i DPP",
+       "po pakietach TP i DPH",
+       "po pakietach TP i DPP"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Android 3.0:",
+      "answers":[
+       "nie wspiera interfejsu USB",
+       "wspiera interfejs USB 4.0 ale tylko dla złącza typu B",
+       "nie wspiera technologii USB OTG",
+       "zawiera sterownik host kontrolera wspierający protokół Session Request Protocol (SRP)"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Nie jest dostępna wersja wnętrza (back-endu) biblioteki libusb dla systemu:",
+      "answers":[
+       "Solaris",
+       "Haiku",
+       "BSD",
+       "iOS"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Deskryptor punktu końcowego w wersji USB 3.1 Gen 1 zawiera parametr:",
+      "answers":[
+       "Interwał magistralowy",
+       "MaxPacketSize",
+       "MaxBurst",
+       "Mult"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Nie istnieje fasada biblioteki libusb dla języka programowania:",
+      "answers":[
+       "PHP",
+       "R",
+       "JavaScript",
+       "OCaml"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"LTSSM:",
+      "answers":[
+       "to maszyna stanów Link training and SuperSpeed State Machine",
+       "To maszyna stanów gdzie stany U1-U3 to stany oszczędzania energii",
+       "To maszyna trzech (głównych) stanów U0-U2",
+       "Wprowadzono dopieor w specyfikacji USB 3.1 Gen 1"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Mechanizm kredytowania USB 3.1 Gen 1",
+      "answers":[
+       "został wprowadzony dopiero w specyfikacji USB 3.1",
+       "Wykorzystuje komendę Lock_Credit",
+       "Wykonywalny jest na poziomie warstwy protokołowej",
+       "Żadna z odpowiedzi"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Zgłoszenie URB zawiera",
+      "answers":[
+       "interwał serwisowy",
+       "Adres punktu końcowego",
+       "Parametr MaxBurst",
+       "Deskryptor punktu końcowego"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Model komunikacyjny USB 3.1 Gen 1: (niepełne pytanie)",
+      "answers":[
+       "jest warstowy"
+      ],
+      "values":[
+       true
+      ]
+   },
+   {
+      "question":"Układ interfejsowy urządzenia USB 3.1 konsumuje najmniejszą energię będąc w stanie:",
+      "answers":[
+       "U3",
+       "U2",
+       "U1",
+       "U0"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Szerokopasmowy izochroniczny punkt końcowy pozwala na przesłanie w ramach interwału serwisowego:",
+      "answers":[
+       "maksymalnie 3 pakietów TP i 48 subpakietów DPP",
+       "maksymalnie 16 pakietów DPH i DPP",
+       "maksymalnie 16 pakietów TP",
+       "maksymalnie 3 subpakietów TP i DPH"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Zgłoszenie transferu URB (libusb_transfer) zawiera:",
+      "answers":[
+       "interwał serwisowy",
+       "rodzaj punktu końcowego, np. izochroniczny",
+       "wskaźnik na strukturę przechowującą deskryptor współtowarzyszący punktu końcowego",
+       "wskaźnik na obiekt zawierający funkcję wywoływaną po zakończeniu transferu danych"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Zdaniem prawdziwym jest:",
+      "answers":[
+       "Z jednym deskryptorem interfejsu związanych może być wiele deskryptorów konfiguracji",
+       "Z jednym deskryptorem interfejsu związanych może być wiele deskryptorów współtowarzyszących punktu końcowego",
+       "z jednym deskrytporem punktu końcowego może być związanych wiele deskrytpowór współtowarzyszących punktu końcowego",
+       "Urządzenie peryferyjne USB może zawierać wiele deskryptorów urządzenia opisujących możliwe konfiguracje urządzenia"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Tryb szybkości transmisji SuperSpeed:",
+      "answers":[
+       "pozwala na transmizję danych z szybkością 10 Gib/s",
+       "nie ma takiego trybu szybkości w żadnej z wersji USB",
+       "wprowadzono w USB 3.0",
+       "wprowadzono w USB 3.1 Gen 1"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Zaznacz zdanie prawdziwe",
+      "answers":[
+       "Biblioteka libusb wspiera Windowsa w wersji RT",
+       "Do poprawnego działania libusb na Linuksie wymagane są uprawnienia roota",
+       "usbdk jest jednym z wielu wnętrz (back-endów) biblioteki libusb",
+       "Biblioteka libusb może być wykorzystywana w oprogramownaniu wbudowanym urządzenia peryferyjnego"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Analogicznym do libusb rozwiązaniem dla interfejsu FireWire jest:",
+      "answers":[
+       "FireWire 1394",
+       "VHPD 1394",
+       "libFireWire",
+       "VHPDFireWire"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Deskrytpor pakietu izochroniecznego biblioteki libusb zawiera:",
+      "answers":[
+       "nie ma czegoś takiego jak deskryptor pakietu izochronicznego",
+       "adres punktu końcowego",
+       "liczbę bajtów przesłanych",
+       "interwał serwisowy"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Warstwowy model komunikacyjny USB 3.1 Gen 1 składa się z warstw:",
+      "answers":[
+       "fizycznej, połączeniowej, transportowej, aplikacji",
+       "fizycznej, łącza danych, transkacji, aplikacji",
+       "fizycznej, połączeniowej, protokołowej, aplikacji",
+       "aplikacji, połączeniowej, transportowej, fizycznej"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Mechanizm multipleksacji strumieni masowych wprowadzono w USB",
+      "answers":[
+       "2.0",
+       "3.1",
+       "3.0",
+       "1.1"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Quasi-równoczesna realizacja wielu transferów danych na jednym szerwgowym łączu USB możliwa jest dzięki podzieleniu tych transferów na:",
+      "answers":[
+       "ramki",
+       "pakiety",
+       "USB 3.1 nie jest szerwgową magistralą ponieważ jest kilka kanałów transmisyjnych w przewodzie",
+       "transakcje"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Maszyna stanów LSSTM w USB 3.1 składa się z:",
+      "answers":[
+       "stanów U0 do U3",
+       "3 stanów",
+       "2 stanów",
+       "nie ma takiej maszyny stanów"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Interwał serwosowy USB może wynosić:",
+      "answers":[
+       "dziesięciokrotność interwału magistralowego",
+       "trzykrotność interwału magistralowego",
+       "drukrotnośc interwału magistralowego",
+       "100 milisekund"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Szybkość transmisji SuperSpeed+ USB 3.1 jest:",
+      "answers":[
+       "wieksza od szubkości transmisji w interfejsie Thunderbolt",
+       "taka sama jak szybkość transmiji w interfejsie Thunderbolt 2",
+       "wolniejsza od szybkości transmisji w interfejsie Thunderbolt 2",
+       "taka sama jak szybkość transmisji w interfejsie Thunderbolt"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Parametr MaxPacketSize deskryptora w interfejsie USB 3.1",
+      "answers":[
+       "Może mieć dyskretną wartość z przedziału 1 do 1024",
+       "Okresla długość pola danych wyrażoną w bitach",
+       "Nie ma takiego parametru, jest natomiast BurstSize",
+       "Może mieć dyskretną warosć z przedziału od 0 do 1023"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Scenariusz wymiany danych na magistrali USB jest przechowywany w pamięci w postaci",
+      "answers":[
+       "kolejek deskryptorów transakcji",
+       "kolejek deskryptorów transferów",
+       "kolejek deskryptorów pakietów",
+       "kolejka pakietów"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Konstrukcja kabala USB 3.1 Gen ? pozwala na transmizję danych w trybie",
+      "answers":[
+       "Pełnego-dupleksu",
+       "Wyłącznie simpleksu",
+       "Tylko pół-dupleksu",
+       "Simpleks to metoda numeryczna programowania liniowego a na to pytanie nie ma tutaj poprawnej odpowiedzi"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Transakcja seryjna (tzw. Burst)",
+      "answers":[
+       "występuje jedynie w prypadku transferów periodycznych, takich jak przerwaniowy i izochroniczny",
+       "jest możliwa nawet dla szerokopasmowego izochronicznego punktu końcowego",
+       "Została wprowadzona dopiero w wersji USB 3.1",
+       "Agreguje, składa zbiór pakietów Tp w jeden pakiet potwierdzający całą transkację"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Bibliotekę libusb napisano w języku:",
+      "answers":[
+       "Perl",
+       "C++",
+       "C",
+       "Java"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Mechanizm kredytowania występuje w warstwie modelu komunikacyjnego USB 3.1:",
+      "answers":[
+       "fizycznej",
+       "sieciowej",
+       "segmentowej",
+       "połączeniowej"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"W przewodzie USB OTG pin ID zwarty jest do:",
+      "answers":[
+       "do masy po stronie urządzenia typu B (domyślnie urządzenia peryferyjnego, kosnumenta zasilania)",
+       "do masy po stronie urządzenia typu A (domyślnie urządzenia peryferyjengo, konsumenta zasilania)",
+       "do masy po stronie urządzenia typu A (dostawcy zasilania i domyślnego kontrolera)",
+       "do masy po stronie urządzenia typu B (dostawcy zasilania i domyślnego kontrolera)"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Struktura deskryptorów urządzenia USB 3.1 Gen 1:",
+      "answers":[
+       "jest hierarchiczna, tnz. z jednym deskryptorem logicznie związany jest zbiór innych deskryptorów (np. jedynym deskryptorem interfejsu związanych jest wiele deskryptorów konfiguracji)",
+       "nie ma czegoś takiego jak struktura deskryptorów, deskryptory przechowywane są w oddzielnych tablicach w pamięi urządzenia peryferyjnego",
+       "zawiera m. in. deskryptory: interfejsu, urządzenia, współtowarzyszący punktu końcowego",
+       "jest zmienna w trakcie oprogramowania wbudowanego urządzenia peryferyjnego"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Jeżeli masowa transakcja seryjnie składa się z 10 subpakietów DPH to zawiera też:",
+      "answers":[
+       "10 pakietów ACK",
+       "10 pakietów TP",
+       "11 pakietów TP",
+       "1 pakiet TP"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"URB (libusb_transfer) zawiera wskaźnik na funkcję, która:",
+      "answers":[
+       "wywoływana jest po zakończeniu (z sukcesem lub błedem) transferu danych",
+       "przyjmuje dwa argumenty: libusb_transfer oraz status transferu danych",
+       "zwraca status transferu danych",
+       "musi być prywatną funkcja klasy"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Wywołanie funkcji linusb_init:",
+      "answers":[
+       "nic nie zwraca",
+       "tworzy domyślny kontekst, jeżeli wcześniej nie został utworzony żaden inny kontekst biblioteki",
+       "tworzy dwa kontksty: użytkownika i domyślny",
+       "tworzy domyślny kontekst o nazwie NIL"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Na początku interwału magistralowego na łączu USB 3.1 rozgłaszany jest pakiet:",
+      "answers":[
+       "IMP",
+       "ITP",
+       "SoP",
+       "SoF"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Identyfikatory VID i PID urządzenia USB 3.1 można znaleźć w deskryptorze",
+      "answers":[
+       "Konfiguracji",
+       "Urządzenia",
+       "BOS (binary object store)",
+       "Interfejs"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"LTSSM to USB",
+      "answers":[
+       "maszyna stanów opisująca obsługę buforów w kanale DMA urządzenia peryferyjnego",
+       "maszyna stanów opidująca tranzycję między stanami oszczędzenia energii portu USB",
+       "maszyna stanów wprowadzona w wersji USB 3.1",
+       "maszyna stanów opisująca tranzycję między deskryptorami współtowarzyszącymi w USB 3.1"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Przewód USB 3.1",
+      "answers":[
+       "jest inny jak przewód USB 3.??? (brak danej w odpowiedzi)",
+       "zawiera w sobie kanał transmisji z przewodu USB 2.0",
+       "zawiera kanały TX i RX",
+       "nie pozwala na równoczesną (full-duplex) transmisję w kanale SuperSpeed"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Transakcja seryjna USB 3.1:",
+      "answers":[
+       "może składać się z co najwyżej 15 par subpakietów DPH+DPP",
+       "nie może składać się z 16 pakietów transakcji",
+       "nie może składać się z 16 pakietów DPH",
+       "może składać się z 16 subpakietów DPP"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Jeżeli punkt końcowy jest szerokopasmowy to oznacza to, że:",
+      "answers":[
+       "jest izochronicznym punktem końcowym",
+       "z takim punktem końcowym można wykonywać transakcje składające się z dowolnej liczby par subpakietów DPH + DPP",
+       "jest wykorzystywany podczas enumeracji ??? (brak dalszej treści)",
+       "jest masowym punktem końcowym"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"W ramach transakcji masowej (bez seryjności) operacji odczytu przesyłane sa w nastepującej kolejności pakiety (lub subpakiety)",
+      "answers":[
+       "TP, DPH, DPP, TP",
+       "TP, DPP, DHP, TP",
+       "DPH, DPP, TP",
+       "TP, DPP, DPH"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Bezbłednie dostarczanie danych, czyli QDA (quality delivery accuracy) gwarantuje transfer USB:",
+      "answers":[
+       "Periodyczny",
+       "Masowy",
+       "Enumeracyjny",
+       "Asynchroniczny"
+      ],
+      "values":[
+       false,
+       true,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Transfer izochroniczny USB 3.1 Gen 1",
+      "answers":[
+       "Pozwala na realizację trzech transakcji w ramach każdego interwału magistralowego (tzw. Transmisja szerokopasmowa)",
+       "jest przypadkie szczególnym transferu przerwaniowego",
+       "nie może być dzielony na transakcje seryjne",
+       "wymaga potwierdzenia poprawności wykonania transakcji"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Punkt końcowy USB 3.1 (SuperSpeed):",
+      "answers":[
+       "nie ma czegoś takiego jak punkt końcowy USB",
+       "pozwala jedynie na odczyt lub zapis danych",
+       "w ramach jednego interwału serwisowego może przyjąć co najwyżej 3 pary subpakietów DPH+DPP(przypadek izochronicznej transmisji szerokopasmowej)",
+       "jego właściwości (parametry) zawarte są w deskryptorze punktu końcowego i w deskryptorze wspótowarzyszącym puktu końcowego"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Suma kontrolna subpakietu DPP transkacji izochronicznej:",
+      "answers":[
+       "jest inna niż w transkacji przerwaniowej",
+       "jest inna niż w transkacji masowej",
+       "jest weryfikowana w przypadku niezgodności, taki subpakiet jest pomijany",
+       "nie istnieje"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   },
+   {
+      "question":"Transakcja masowa operacji odczytu na łączu USB 3.1 składa się z (sub)pakietów w kolejności:",
+      "answers":[
+       "TP, DPH, DPP, TP",
+       "Tokena, DPP, DPH, ACK",
+       "TP, DPP, DPH, ACK",
+       "TP, DPH, DPP, ACK"
+      ],
+      "values":[
+       true,
+       false,
+       false,
+       false
+      ]
+   },
+   {
+      "question":"Którą warstwę modelu komunikacyjnego interfejsu USB w wersji 3.1 Gen 2 zmodyfikowano wprowadzając nowy sposób kodowania danych?",
+      "answers":[
+       "połączeniową",
+       "sieci",
+       "łącza danych",
+       "fizyczną"
+      ],
+      "values":[
+       false,
+       false,
+       false,
+       true
+      ]
+   },
+   {
+      "question":"Podczas procedury enumeracji przypisanie adresu do nowo-podłączonego urządzenia odbywa się po pobraniu deskryptora:",
+      "answers":[
+       "punktu końcowego",
+       "konfiguracji",
+       "urządzenia",
+       "interfejsu"
+      ],
+      "values":[
+       false,
+       false,
+       true,
+       false
+      ]
+   }
+  ]
+ }

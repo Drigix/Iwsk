@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  color: white;
+}
+
+.list-element {
+  padding: 10px;
+
+  label {
+    margin-left: 10px;
+  }
+}
+
+.buttons-container {
+  margin: 30px;
+}
+
+.red-color {
+  color:red;
+}
+
+.green-color {
+  color:green;
+}

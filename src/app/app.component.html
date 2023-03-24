@@ -1,0 +1,15 @@
+<div class="main">
+  <h2 style="color: #2563eb">{{actualQuestion?.question}}</h2>
+  <div class="list" *ngFor="let item of actualQuestion?.answers; index as i">
+    <div class="list-element" [ngClass]="ifCheck ? actualQuestion!.values[i] ? 'green-color' : 'red-color' : '' ">
+      <p-radioButton name="item" [value]="item" [(ngModel)]="chooseAnswer" [inputId]="i.toString()"></p-radioButton>
+      <label for="asnwer">{{item}}</label>
+    </div>
+  </div>
+  <div class="buttons-container">
+    <p-button [style]="{'margin-right': '20px'}" (onClick)="checkQuestion()" [disabled]="chooseAnswer === (undefined || null)">Sprawdź odpowiedź</p-button>
+    <p-button (onClick)="nextQuestion()">Następne pytanie</p-button>
+  </div>
+  <h2 style="color: #2563eb">Pytanie {{actualIndexQuestion + 1}}/{{questions?.questions?.length}}</h2>
+  <h2 style="color: #2563eb">Punkty {{counter}}</h2>
+</div>
